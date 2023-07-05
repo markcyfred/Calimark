@@ -1,0 +1,114 @@
+<html>
+  <head>
+    <title>Weather App</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="weather app" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Page icon Link -->
+    <link rel="icon" href="assets/images/icon.png" />
+
+    <!-- Font Family Link -->
+    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+
+    <!-- Fontawesome Link -->
+    <link rel="stylesheet" href="assets\css\markall.min.css" />
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Page Style Link -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+  </head>
+
+  <body>
+   
+
+    <!------------------------ Start Display Temp ------------------------>
+    <section class="display-temp " id="marksearch">
+      <div class="bg-color  py-5 ">
+      <div class="container">
+        <div class="marksearch m-auto">
+          <input type="text" id="marksearch-bar" class="w-100 mb-5" placeholder="&#xF002; search City..." style="font-family:Arial, FontAwesome"/>
+        </div>
+        <div class="city-temp d-flex">
+
+            <!-- Today's Card -->
+            <div class="temp-card shadow">
+              <div class="day-and-date d-flex justify-content-between">
+                <p id="today">Monday</p>
+                <p id="today-date">3 May</p>
+              </div>
+
+              <div class="temp-datails">
+                <p id="location"></p>
+                <div class="d-flex justify-content-between my-4">
+                  <div class="pt-3">
+                    <h2 id="today-degree" class="d-inline-block"></h2><h2 class="d-inline-block"><sup>o</sup>C</h2>
+                  </div>
+                  <img id="today-icon"  width="90"/>
+                </div>
+                <p id="today-description"></p>
+                <div class="details">
+                  <i class="fas fa-umbrella pr-1"></i>
+                  <span id="humidty"></span> <span>%</span>
+
+                  <i class="fas fa-wind pl-3 pr-1"></i>
+                  <span id="wind"></span> <span>km/h</span>
+
+                  <i class="far fa-compass pl-3 pr-1"></i>
+                  <span id="compass"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Next Days Cards -->
+            <div class="temp-card text-center shadow">
+              <div class="day-and-date">
+                <p class="nextDay"></p>
+              </div>
+
+              <div class="temp-datails">
+                <div>
+                  <img class="nextDay-icon" width="90"/>
+                </div>
+                <h2 class="max-degree d-inline-block"></h2><h2 class="d-inline-block"><sup>o</sup>C</h2>
+                <br>
+                <p class="min-degree d-inline-block"></p><p class="d-inline-block"><sup>o</sup>C</p>
+                <p class="nextDay-description"></p>
+              </div>
+            </div>
+
+            <div class="temp-card text-center shadow">
+              <div class="day-and-date">
+                <p class="nextDay">Wednsday</p>
+              </div>
+
+              <div class="temp-datails">
+                <div>
+                  <img class="nextDay-icon" width="90"/>
+                </div>
+                <h2 class="max-degree d-inline-block"></h2><h2 class="d-inline-block"><sup>o</sup>C</h2>
+                <br>
+                <p class="min-degree d-inline-block"></p><p class="d-inline-block"><sup>o</sup>C</p>
+                <p class="nextDay-description"></p>
+              </div>
+            </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!------------------------ End Display Temp ------------------------>
+
+    <!-- JQuery Link -->
+    <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+    <!-- Popper Link -->
+    <script src="assets/js/popper.min.js"></script>
+    <!-- Bootstrap Link -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Page Main Script Link -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
